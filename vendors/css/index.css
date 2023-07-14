@@ -178,3 +178,28 @@ body {
 .hide {
   display: none;
 }
+
+.no-card {
+  display: none;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  margin-bottom: 2rem;
+  padding: 5rem 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.no-card.show {
+  display: flex;
+}
+
+.no-card p {
+  font-size: 1.6rem;
+}
