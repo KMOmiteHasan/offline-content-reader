@@ -8,7 +8,7 @@ let noContent = document.querySelector(".no-card");
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase();
   contents.forEach((content) => {
-    const isVisible = content.innerHTML.toLowerCase().includes(value);
+    const isVisible = content.innerHTML.toLowerCase().includes(value) || content.nextElementSibling.innerHTML.includes(value)
     content.parentElement.classList.toggle("hide", !isVisible);
   });
   noContent.classList.add("show");

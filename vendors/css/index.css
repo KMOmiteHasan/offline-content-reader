@@ -137,6 +137,16 @@ body {
   margin-bottom: 2rem;
 }
 
+.card h3 {
+  font-size: 2.4rem;
+  color: #000000;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
 .card p {
   display: flex;
   flex-direction: row;
