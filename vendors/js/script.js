@@ -6,9 +6,11 @@ let contents = document.querySelectorAll(".card h2");
 let noContent = document.querySelector(".no-card");
 
 searchInput.addEventListener("input", (e) => {
-  const value = e.target.value.toLowerCase();
+  const value = e.target.value.toLowerCase().trim();
   contents.forEach((content) => {
-    const isVisible = content.innerHTML.toLowerCase().includes(value) || content.nextElementSibling.innerHTML.includes(value)
+    const isVisible =
+      content.innerHTML.toLowerCase().includes(value) ||
+      content.nextElementSibling.innerHTML.includes(value);
     content.parentElement.classList.toggle("hide", !isVisible);
   });
   noContent.classList.add("show");

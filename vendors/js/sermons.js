@@ -405,6 +405,12 @@ const formateTime = (time) => {
 
 closeMusic.addEventListener("click", (event) => {
   audioBox.style.display = "none";
+  audioMain.forEach((content) => {
+    content.pause();
+    content.currentTime = 0;
+    playAudio.style.display = "block";
+    pauseAudio.style.display = "none";
+  });
 });
 
 const setAudio = () => {
