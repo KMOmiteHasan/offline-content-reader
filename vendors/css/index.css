@@ -49,7 +49,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   word-spacing: 0.5rem;
-  line-height: 5rem;
+  line-height: 5.5rem;
 }
 
 .text-wrapper {
@@ -110,7 +110,7 @@ body {
   background-color: #ffffff;
   border: 1px solid #cccccc;
   margin-bottom: 2rem;
-  padding: 5rem 4rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,7 +128,7 @@ body {
 }
 
 .card h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #000000;
   font-weight: 600;
   text-transform: capitalize;
@@ -138,7 +138,7 @@ body {
 }
 
 .card h3 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #000000;
   font-weight: 600;
   text-transform: capitalize;
@@ -250,6 +250,13 @@ body {
     width: 900px;
     padding: 3rem 2rem;
   }
+  .card h2 {
+    font-size: 2.2rem;
+  }
+
+  .card h3 {
+    font-size: 2.1rem;
+  }
 }
 @media (max-width: 900px) {
   html {
@@ -259,6 +266,13 @@ body {
     max-width: 90%;
     width: 800px;
     padding: 3rem 2rem;
+  }
+  .card h2 {
+    font-size: 2.1rem;
+  }
+
+  .card h3 {
+    font-size: 2rem;
   }
 }
 @media (max-width: 800px) {
@@ -271,13 +285,82 @@ body {
     padding: 3rem 2rem;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   html {
     font-size: 6.5px;
   }
   .container {
-    max-width: 90%;
-    width: 600xp;
+    max-width: 95%;
+    width: 660px;
+    padding: 3rem 2rem;
+  }
+  .card h2 {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 6px;
+  }
+  .container {
+    max-width: 95%;
+    width: 540px;
+    padding: 3rem 2rem;
+  }
+  .card h2 {
+    font-size: 1.8rem;
+  }
+
+  .card h3 {
+    font-size: 1.8rem;
+  }
+
+  .card a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  html {
+    font-size: 5px;
+  }
+  .container {
+    max-width: 95%;
+    width: 460px;
+    padding: 3rem 2rem;
+  }
+  .content-wrapper {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+  }
+  .card h2 {
+    font-size: 2.1rem;
+  }
+
+  .card h3 {
+    font-size: 2rem;
+  }
+
+  .card a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 4.5px;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
     padding: 3rem 2rem;
   }
 }
